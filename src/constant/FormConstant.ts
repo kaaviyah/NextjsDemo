@@ -3,27 +3,30 @@ export const formConfig = {
       {
         name: "First Name",
         type: "text",
-        options: [],
       },
       {
         name: "Last Name",
         type: "text",
-        options: [],
       },
       {
         name: "Email",
         type: "text",  
-        options: [],
       },
       {
         name: "Phone Number",
-        type: "text", 
-        options: [],
+        type: "text",
+      
       },
+      {
+        name: "Product Name",
+        type:"text",
+        apiOptions:true,
+        apiUrl:'https://fakestoreapi.com/products'
+      },
+
       {
         name: "Age",
         type: "text", 
-        options: [],
       },
       {
         name: "Category",
@@ -40,6 +43,7 @@ export const formConfig = {
         type: "checkbox",
         options: ["Subscribe to receive news and updates"],
       },
+     
     ],
   };
   

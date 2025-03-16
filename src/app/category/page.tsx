@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from 'react';
 import FormComponent from '../../components/formcomponent/FormComponent';
+import { formConfig } from '@/constant/FormConstant';
 
 const Category = () => {
   const [showForm, setShowForm] = useState(false);
@@ -20,7 +21,7 @@ const Category = () => {
       </div>
       
       
-      {showForm && <FormComponent />}
+      {showForm && <FormComponent formConfig={formConfig}/>}
     </div>
   );
 };

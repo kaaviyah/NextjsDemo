@@ -1,13 +1,12 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { formConfig } from '../../contant/FormConstant';
 import './FormComponent.css';
 
-const FormComponent = () => {
+const FormComponent = (props:any) => {
   const [fields, setFields] = useState<any[]>([]);
 
   useEffect(() => {
-    const initialFields = formConfig.fields.map(field => ({
+    const initialFields = props.formConfig.fields.map((field:any) => ({
       name: field.name,
       value: field.type === 'select' || field.type === 'checkbox' ? '' : '',
     }));
