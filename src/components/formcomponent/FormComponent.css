@@ -57,3 +57,25 @@ button:hover {
 .radio-container input {
   margin-right: 5px;
 }
+
+
+.custom-dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}

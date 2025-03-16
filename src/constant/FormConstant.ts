@@ -21,7 +21,6 @@ export const formConfig = {
         name: "Product Name",
         type:"text",
         apiOptions:true,
-        apiUrl:'https://fakestoreapi.com/products'
       },
 
       {
