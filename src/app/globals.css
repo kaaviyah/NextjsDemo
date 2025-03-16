@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .header_top__icon_wrapper {
+    @apply bg-gray-200 rounded-md p-[6px] text-[14px] cursor-pointer hover:bg-accent hover:text-white;
+  }
+
+.navbar__link:hover{
+color:#ff8f9c;
+transition: all 0.4s;
+}
+.navbar__link::after{
+  position: absolute;
+  content: "";
+  background-color: #ff8f9c;
+  height:3px;
+  width:100%;
+  bottom:-5px;
+  left:0;
+  scale:0;
+  transform-origin: left;
+  transition: all 0.4s;
+
+}
+.navbar__link:hover::after{
+  scale:1;
+}
+}
+body{
+  overflow-x: hidden;
+}
+main{
+  overflow-x: hidden;
+}
+/* global.css */
+.slick-list {
+  position: relative;
+  width: 1200px;
+left: 10%;
+  /* Other styles here */
+}
+
+.btn-create-close{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 14px;
+}
+
+.btn-create-close-innerbtn{
+  width: fit-content;
+}
+
+
+/* Default Link Style */
+.navbar__link {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Active Link Style */
+.navbar__link.active {
+  color: #ff8f9c; /* Highlight color for active link */
+  font-weight: bold; /* Optional: make the active link bold */
+}
+
+.navbar__link.active::after {
+  scale: 1; /* Make the line visible and expand it when the link is active */
+}
