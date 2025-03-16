@@ -63,7 +63,6 @@ left: 10%;
 }
 
 
-/* Default Link Style */
 .navbar__link {
   text-decoration: none;
   color: #000;
@@ -72,12 +71,11 @@ left: 10%;
 
 
 
-/* Active Link Style */
 .navbar__link.active {
-  color: #ff8f9c; /* Highlight color for active link */
-  font-weight: bold; /* Optional: make the active link bold */
+  color: #ff8f9c; 
+  font-weight: bold; 
 }
 
 .navbar__link.active::after {
-  scale: 1; /* Make the line visible and expand it when the link is active */
+  scale: 1;
 }
