@@ -30,7 +30,7 @@ const FormComponent = (props:any) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      {formConfig.fields.map((fieldConfig, index) => (
+      {props.formConfig.fields.map((fieldConfig:any, index:any) => (
         <div key={index} className="field-container">
           <label>
             {fieldConfig.name}:
