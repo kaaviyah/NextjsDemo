@@ -196,11 +196,12 @@ const ProductCards: React.FC<Proptypes> = ({ img, title, desc, rating, price, id
           <div className="bg-white rounded-lg p-4 max-w-lg w-full">
             <h2 className="text-lg font-semibold">{title}</h2>
             <Image
-              className="w-full h-auto my-4"
+              className="w-full my-4"
               src={img}
               width={300}
               height={300}
               alt={title}
+              style={{height:'200px'}}
             />
             <p className="text-gray-700 mb-4">{desc}</p>
             <p className="font-bold text-xl">{price}</p>
