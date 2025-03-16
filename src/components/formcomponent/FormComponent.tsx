@@ -134,17 +134,21 @@ const FormComponent = (props: any) => {
                   </label>
                 ))}
               </div>
-            ) : fieldConfig.type === 'checkbox' ? (
-              <label>
-                <input
-                  type="checkbox"
-                  name={fieldConfig.name}
-                  checked={fields[index]?.value || false}
-                  onChange={(e) => handleFieldChange(index, e)}
-                />
-                {fieldConfig.options[0]}
-              </label>
+            ) :fieldConfig.type === 'checkbox' ? (
+              <div className="checkbox-container">
+                <label>
+                  <input
+                    type="checkbox"
+                    name={fieldConfig.name}
+                    checked={fields[index]?.value || false}
+                    onChange={(e) => handleFieldChange(index, e)}
+                  />
+                  <span className='checkbox-inner'>{fieldConfig.options[0]}</span>
+                  
+                </label>
+              </div>
             ) : null}
+            
           </label>
         </div>
       ))}
